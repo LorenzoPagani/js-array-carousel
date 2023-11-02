@@ -4,7 +4,13 @@ images[currentImg].classList.add("d-inline-block");
 
 clickNxt = document.getElementById("nextBtn").addEventListener("click", function () {
     
-    if (currentImg < images.length - 1) {
+    if (currentImg == images.length - 1) {
+        images[currentImg].classList.remove("d-inline-block");
+        currentImg = 0; 
+        images[currentImg].classList.add("d-inline-block");
+    }
+    
+    else if (currentImg < images.length - 1) {
         images[currentImg].classList.remove("d-inline-block");
         currentImg++;
         images[currentImg].classList.add("d-inline-block");
@@ -13,7 +19,13 @@ clickNxt = document.getElementById("nextBtn").addEventListener("click", function
 
 clickPrv = document.getElementById("prevBtn").addEventListener("click", function () {
     
-    if (currentImg > 0) {
+    if (currentImg == 0) {
+        images[currentImg].classList.remove("d-inline-block");
+        currentImg = images.length - 1; 
+        images[currentImg].classList.add("d-inline-block");
+    }
+    
+    else if (currentImg > 0) {
         images[currentImg].classList.remove("d-inline-block");
         currentImg--;
         images[currentImg].classList.add("d-inline-block");
