@@ -1,6 +1,44 @@
+body {
+    background-color: #222;
+}
+
+.relative {
+    position: relative;
+}
+
 .picture {
-    width: 300px;
+    width: 600px;
     height: 300px;
     display: none;
     object-fit: contain;
+    background-color: rgb(116, 112, 112);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#prevBtn {
+    position: absolute;
+        left: 15%;
+        top: 40%; 
+}
+#nextBtn {
+    position: absolute;
+        right: 15%;
+        top: 40%; 
+}
+
+.thumb-list {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: rgb(116, 112, 112);
+    padding: 5px;
+    filter: brightness(60%);
+    margin: 5px 0;
+}
+
+.active-thumb {
+    filter: brightness(100%);
+    border: 2px solid greenyellow;
 }

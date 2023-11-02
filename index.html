@@ -9,24 +9,25 @@
     <title>Array/carousel</title>
 </head>
 <body>
-    <header>
-        <h1 class="text-center">Il mio carousel</h1>
-    </header>
     <main>
-        <div class="container">
+        <div class="container pt-5">
             <div class="row">
-                <div id="carousel" class=" col-12 text-center">
-                   <!--  <img class="picture " src="img/01.webp" alt="">
-                    <img class="picture " src="img/02.webp" alt="">
-                    <img class="picture " src="img/03.webp" alt="">
-                    <img class="picture " src="img/04.webp" alt="">
-                    <img class="picture " src="img/05.webp" alt=""> -->
+                <div class="col-11">
+                    <div class="row relative">
+                        <div id="carousel" class=" col-12 text-center">
+                            <!-- large image -->
+                        </div>
+                        <div class="col-12 text-center">
+                            <button id="prevBtn" class="btn btn-light"><i class="fa-solid fa-caret-left"></i></button>
+                            <button id="nextBtn" class="btn btn-light"><i class="fa-solid fa-caret-right"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 text-center">
-                    <button id="prevBtn"><i class="fa-solid fa-caret-left"></i></button>
-                    <button id="nextBtn"><i class="fa-solid fa-caret-right"></i></button>
+                <div id="thumbnails" class="col-1">
+                    <!-- thumbnails list -->
                 </div>
             </div>
+            
         </div>
     </main>
     <script src="main.js"></script>
